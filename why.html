@@ -1,0 +1,50 @@
+<!DoCtYpE html>
+<!-- Error 1: Doctype is case sensitive but browsers are forgiving. -->
+<html lang="en">
+<head>
+    <!-- Error 2: Missing character encoding meta tag. This can cause character display issues. -->
+    <title>HTML Errors Demonstration</title>
+</head>
+<body>
+    <h1>Demonstrating Common HTML Errors</h1>
+
+    <!-- Error 3: Missing alt attribute on an image tag. This is an accessibility and SEO issue. -->
+    <img src="nonexistent-image.jpg">
+
+    <!-- Error 4: Improperly nested elements. An inline element (<em>) contains a block-level element (<h2>). -->
+    <p>This is a paragraph with <em><h2>an improperly nested heading</h2></em></p>
+
+    <!-- Error 5: Missing closing tag for the <ul> element. -->
+    <p>An incomplete list:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+    </ul>
+
+    <!-- Error 6: Missing double quotes for attribute values. -->
+    <div id=error-six style=color:red>
+        This div is missing quotes for its attributes.
+    </div>
+
+    <!-- Error 7: Using a deprecated tag (<marquee>). -->
+    <marquee style="color: blue;">This is a deprecated marquee tag.</marquee>
+    
+    <!-- Error 8: Using multiple H1 tags (bad practice for document outline and SEO). -->
+    <h1>Another H1 Tag (Bad Practice)</h1>
+
+    <!-- Error 9: Table with an inconsistent number of cells per row. -->
+    <table>
+        <tr>
+            <td>Header A</td>
+            <td>Header B</td>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Extra Data (Error)</td>
+        </tr>
+    </table>
+
+</body>
+<!-- Error 10: Missing the closing </html> tag (browsers will still render). -->
+
